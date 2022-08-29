@@ -1,26 +1,25 @@
 from distutils.core import setup
 setup(
-  name = 'pykuma',         # How you named your package folder (MyLib)
-  packages = ['pykuma'],   # Chose the same as "name"
-  version = '1.0.2',      # Start with a small number and increase it with every change you make
+  name = 'pykuma',        
+  packages = ['pykuma'],   
+  version = '1.0.2',      
   readme = "README.md"
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'An API for Python and Uptime Kuma integration',   # Give a short description about your library
-  author = 'oliverstech',                   # Type in your name
-  author_email = 'mail@oliverstech.tk',      # Type in your E-Mail
-  url = 'https://github.com/oliverstech/pykuma',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/oliverstech/pykuma/archive/refs/tags/1.0.tar.gz',    # I explain this later on
-  keywords = ['uptime', 'api', 'pykuma', 'kuma'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
+  license='MIT',        
+  description = 'An API for Python and Uptime Kuma integration',   
+  author = 'oliverstech',                   
+  author_email = 'mail@oliverstech.tk',      
+  url = 'https://github.com/oliverstech/pykuma',   
+  keywords = ['uptime', 'api', 'pykuma', 'kuma'],   
+  install_requires=[           
           'requests',
           'asyncio',
       ],
   classifiers=[
-    'Development Status :: 5 - Production/Stable',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
+    'Development Status :: 5 - Production/Stable',      # "3 - Alpha", "4 - Beta" or "5 - Production/Stable"
+    'Intended Audience :: Developers',      
     'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
+    'License :: OSI Approved :: MIT License',   
+    'Programming Language :: Python :: 3',      
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
