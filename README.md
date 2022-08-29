@@ -51,6 +51,27 @@ pykuma.start()
 ```
 PyKuma will begin periodically pushing every heartbeat interval. If you check your monitor, you should see one push already come through as PyKuma runs one for testing.
 
+## Demo output and code usage
+You can view the demo output and code usage in this [Workflow run](https://github.com/oliverstech/pykuma/runs/8073240011).
+
+### Naviating to demo output
+1. Click on the demo you'd like to view. For example, 'printing on push'.
+2. You should see the demo output.
+
+![image](https://user-images.githubusercontent.com/89639839/187229555-0d17dc07-5486-4e31-a578-8bccd9c348b4.png)
+
+
+### Navigating to code usage
+1. Click on the demo you'd like to view. For example, 'printing on push'.
+2. Click the following arrow. 
+
+![image](https://user-images.githubusercontent.com/89639839/187229175-aa321e17-f8fe-4c07-a54f-a59d4ff3874e.png)
+
+3. You should see the demonstration code. 
+
+![image](https://user-images.githubusercontent.com/89639839/187229241-85a7ffca-2220-41bf-8acb-e3324db0147d.png)
+
+
 ## Dependencies used
 - [requests](https://pypi.org/project/requests)
 - [asyncio](https://pypi.org/project/asyncio)
