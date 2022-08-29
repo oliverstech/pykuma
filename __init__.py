@@ -1,1 +1,1 @@
-from pykuma import configure, start
+from pykuma.helper import configure, start
