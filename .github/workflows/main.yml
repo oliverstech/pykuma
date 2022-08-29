@@ -1,0 +1,48 @@
+name: Demo Output (PyPI Package)
+
+on:
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4.2.0
+
+      - name: Preconfiguration - Installation of PyKuma
+        run: pip install pykuma
+        
+      - name: URL Only Configuration
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import pykuma
+            pykuma.configure(url="https://someurl.com")
+            pykuma.start()
+      - name: Changing heartbeat interval
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import pykuma
+            pykuma.configure(url="https://someurl.com", heartbeat=120)
+            pykuma.start()
+            
+      - name: Disabling Credit Message
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import pykuma
+            pykuma.configure(url="https://someurl.com", ShowMessage=False)
+            pykuma.start()
+            
+      - name: Printing on push
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import pykuma
+            from time import sleep
+            
+            pykuma.configure(url="https://someurl.com", heartbeat=5, printPush=True)
+            pykuma.start()
+            sleep(7) 
