@@ -1,14 +1,23 @@
 # PyKuma
 An API for Python Scripts to integrate with Uptime Kuma.
 
+[![PyPI](https://img.shields.io/pypi/v/pykuma)](https://pypi.org/project/pykuma/)
+[![GitHub watchers](https://img.shields.io/github/watchers/oliverstech/pykuma?style=social)](https://github.com/oliverstech/pykuma/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/oliverstech/pykuma?style=social)](https://github.com/oliverstech/pykuma/fork)
+![GitHub Repo stars](https://img.shields.io/github/stars/oliverstech/pykuma?style=social)
+
+Interested in donating? A donate link will be here soon :)
+
+
+
 ## Installation
 ### PyPI/pip - Easiest method
 The easiest way to install PyKuma is using PyPI. Simply type:
-```
+```console
 pip install pykuma
 ```
 or, if python isn't in your PATH:
-```
+```console
 py -m pip install pykuma
 ```
 [View on PyPI](https://pypi.org/project/pykuma/)
@@ -44,7 +53,4 @@ PyKuma will begin periodically pushing every heartbeat interval. If you check yo
 
 ## Dependencies used
 - [requests](https://pypi.org/project/requests)
-- [asyncio]((https://pypi.org/project/asyncio)
-
-
-
+- [asyncio](https://pypi.org/project/asyncio)
