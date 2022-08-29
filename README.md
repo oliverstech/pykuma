@@ -37,7 +37,7 @@ Secondly, we need to configure it with Uptime Kuma. To do this, open your Uptime
 
 Now, back at the script, type:
 ```py
-pykuma.configure(url="uptime-kuma-push-url", heartbeat=60, ShowMessage=False, printPush=False)
+pykuma.configure(url="uptime-kuma-push-url", heartbeat=60, ShowMessage=True, printPush=False)
 ```
 the arguements mean the following:
 - `url` - the push URL from Uptime Kuma. Required.
