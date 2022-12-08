@@ -3,7 +3,7 @@ setup(
   name = 'pykuma',        
   packages = ['pykuma'],   
   version = '1.0.2',      
-  readme = "README.md"
+  readme = "README.md",
   license='MIT',        
   description = 'An API for Python and Uptime Kuma integration',   
   author = 'oliverstech',                   
